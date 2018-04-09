@@ -40,7 +40,7 @@ const postCodeSearch = function() {
   //Uses constituency to create URL for Get REQUESt for MP information
   mpConsituencySearchURL = parliamentConsituencySearch + constituency;
   //GET Request for MP info
-  $.ajax({url: mpConsituencySearchURL, success: function(data){
+  $.ajax({url: mpConsituencySearchURL, datatype:"jsonp", success: function(data){
     //Searches XML data to get MP name printed out
     membersNode = data.getElementsByTagName("FullTitle")[0];
     membersNameValue = membersNode.childNodes[0];
@@ -68,7 +68,7 @@ const postCodeSearch = function() {
     $('.YourMPis').html(yourMPisHTML);
 
     mpTwitterSearchURL = parliamentTwitterSearch + memberID + '.json';
-    $.ajax({url: mpTwitterSearchURL, success: function(data){
+    $.ajax({url: mpTwitterSearchURL, datatype:"jsonp", success: function(data){
 
       if(data.result.primaryTopic.twitter){
       $twitterWebsite = data.result.primaryTopic.twitter._value
