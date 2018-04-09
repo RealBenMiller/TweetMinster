@@ -40,7 +40,7 @@ const postCodeSearch = function() {
   //Uses constituency to create URL for Get REQUESt for MP information
   mpConsituencySearchURL = parliamentConsituencySearch + constituency;
   //GET Request for MP info
-  $.get(mpConsituencySearchURL, function(data){
+  $.ajax({url: mpConsituencySearchURL}).done(function(data){
     //Searches XML data to get MP name printed out
     membersNode = data.getElementsByTagName("FullTitle")[0];
     membersNameValue = membersNode.childNodes[0];
