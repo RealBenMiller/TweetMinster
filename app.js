@@ -89,8 +89,8 @@ const postCodeSearch = function() {
       alert('Please try again');
     };
   }
-
 });
+}
 
 $(".modal").click( function(){
   $(".modal").css("display", "none");
