@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Tweet My MP</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <h1>Welcome to Tweet Your MP</h1>
+      <h3>Remember</h3>
+      <p>Technology has made participating in the democratic process easier than ever, but it has also brought with it an increase in online abuse.</p>
+      <p>This tool is designed to help you tell your elected representative in Parliament about the issues you care most about, not a tool to dish out abuse that achieves absolutely nothing.</p>
+      <p>You are entirely responsible for what you put on Twitter and are bound by Twitter's terms of service.</p>
+      <p>Above all, be civil.</p>
+      <p>
+        Click anywhere to continue.
+      </p>
+    </div>
+  </div>
+  <div class = "pageHeader"
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+            Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+            About
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="jumbotron">
+      <h1>Tweet My MP</h1>
+      <h2>Get Started</h2>
+      <p>
+        Type your postcode to find your MP
+      </p>
+      <input class="postCodeInput"/><br />
+      <button class="postCodefinder buttonStyle">Submit</button>
+    </div>
+  </div> <!--END OF HEADER -->
+
+  <div class="main" id="main" hidden>
+    <div class="YourMP" id="YourMP">
+      <h2>Your MP</h2>
+      <p class="YourMPis">
+
+      </p>
+      <div class="ResponseMessage"> <!--If have twitter, this box will be displayed-->
+      </div> <!--End of have twitter-->
+      <div class="tweetmessage">
+      </div>
+
+      <div>
+      </br>
+        <h3 class="privacyStatment">Privacy Statement</h3>
+        <p>
+        Tweet Your MP does not collect any information relating to your tweet or Twitter account. Nor do we collect information on your postcode.
+        </p>
+      </div>
+      <button class="buttonStyle startAgain">Start Again</button>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  <script src="app.js"></script>
+
+</body>
+</html>

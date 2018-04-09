@@ -1,0 +1,321 @@
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+
+/************************************
+            Header Styles
+************************************/
+
+/******
+nav
+******/
+
+.navbar {
+  width: 90%;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.navbar ul {
+  margin: 0px;
+  padding: 30px 10px 10px 10px;
+}
+
+.navbar li {
+  display:inline;
+  list-style: none;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+
+.navbar li a{
+  color: white;
+  padding: 0 30px;
+  text-decoration: none;
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+
+/************************************
+            Page LayOut Styles
+************************************/
+
+.pageHeader {
+    width:100vw;
+    height:100vh;
+    background:green;
+    background-image:url('../img/backgroundimage.jpg');
+    background-size:cover;
+    background-position: right;
+}
+
+.main {
+    position:absolute;
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70%;
+    height: 100vh;
+}
+
+/************************************
+            PostCode Search Styles
+************************************/
+
+.jumbotron{
+  text-align: center;
+  padding-top: 45%;
+  font-size: 1em;
+  color: white;
+}
+
+.postCodeInput{
+  width: 55%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  height: 25px;
+}
+
+.postCodeInput:hover{
+  background-color: #ebebeb;
+}
+
+.postCodeInput:focus{
+  border: 3px solid white;
+}
+
+.buttonStyle {
+  color: white;
+  height: 50px;
+  width: 30%;
+  padding: 0;
+  border-radius: 8px;
+  background-color: #443B80;
+  border: 1px solid white;
+}
+
+.postCodefinder:hover{
+  border: 4px solid white;
+}
+
+.postCodefinder a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/************************************
+        Main Styles
+************************************/
+
+.YourMP {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.YourMP h2{
+  text-decoration: underline;
+  font-size: 2.5em;
+}
+
+.YourMPis {
+  font-size: 1.6em;
+}
+
+.startAgain{
+  margin-top: 30px;
+}
+
+/************************************
+        Twiiter buttons
+************************************/
+
+.fa-twitter{
+  color: white;
+}
+
+.ResponseMessage {
+  text-align:center;
+}
+
+.twitterButton{
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  background-color: #1DA1F2;
+  border-radius: 4px;
+  border:none;
+  margin:auto;
+}
+
+.twitterButton a{
+  padding-top: 20px;
+  height: 60px;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*********************************
+            Modal
+*********************************/
+
+.modal{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modal-content{
+    text-align: center;
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border: 20px solid #443B80;
+    border-radius: 15px;
+    height: 60vh;
+    font-size: 0.8em;
+}
+
+
+/************************************
+      About Page
+************************************/
+
+.aboutContent{
+  background-color: white;
+  border: 2px solid #443B80;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 100px;;
+  font-size: 1em;
+  color: #443B80;
+}
+
+.socialmediabuttons {
+  width: 100%;
+  text-align: center;
+  color: #443B80;
+  padding-bottom: 20px;
+}
+
+.socialmediabuttons .fa-twitter, .fa-linkedin-in{
+  color: #443B80;
+  padding: 10px 25px;
+}
+
+
+/*********************************
+            Media Queries
+*********************************/
+/********
+Tablet
+********/
+
+@media screen and (min-width: 450px) and (max-width:649px) {
+
+  .modal-content{
+    height:60vh;
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .postCodeInput{
+    width: 30%;
+  }
+
+  .navbar {
+
+    width: 95%;
+    text-align: right;
+    margin-right: 5%;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .navbar li {
+    font-size: 0.8em;
+  }
+
+  .postCodefinder {
+    width: 15%;
+    height: 25px;
+  }
+
+  .jumbotron{
+    padding-top: 25%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .postCodeInput{
+    width: 30%;
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+}
+
+/********
+DESKTOP
+********/
+
+@media screen and (min-width: 650px) {
+
+  .modal-content{
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .postCodeInput{
+    width: 30%;
+  }
+
+  .navbar {
+    width: 95%;
+    text-align: right;
+    margin-right: 5%;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .buttonStyle {
+    width: 15%;
+  }
+
+  .jumbotron{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .postCodeInput{
+    width: 30%;
+  }
+
+  .main {
+    height: 100%;
+  }
+
+}
