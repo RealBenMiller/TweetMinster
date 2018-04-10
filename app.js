@@ -1,7 +1,7 @@
 //Setting all Variables
 //URL Variables
 const postCodeURL = 'https://api.postcodes.io/postcodes/';
-const parliamentConsituencySearch = 'data.parliament.uk/membersdataplatform/services/mnis/members/query/constituency=';
+const parliamentConsituencySearch = 'https://data.parliament.uk/membersdataplatform/services/mnis/members/query/constituency=';
 const parliamentTwitterSearch = 'lda.data.parliament.uk/members/';
 
 //Return Variables
