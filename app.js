@@ -77,7 +77,7 @@ const postCodeSearch = function() {
       twitterhandle = '@' + twitterName;
       successMessage += membersName;
       $('.tweetmessage').html(successMessage);
-      twitterButton = '<div class="twitterButton"><a href="http://twitter.com/intent/tweet?screen_name=' + twitterName + '&hashtags=TweetMyMP"><i class="fab fa-twitter"></i>  Tweet to ' + twitterhandle + '</a></div>';
+      twitterButton = '<div class="twitterButton"><a href="http://twitter.com/intent/tweet?screen_name='.twitterName.'&hashtags=TweetMyMP"><i class="fab fa-twitter"></i>  Tweet to ' + twitterhandle + '</a></div>';
       $('.ResponseMessage').html(twitterButton);
       } else {
       $('.ResponseMessage').html(failMessage);
