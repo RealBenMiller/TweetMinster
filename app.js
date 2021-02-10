@@ -2,7 +2,7 @@
 //URL Variables
 const postCodeURL = 'https://api.postcodes.io/postcodes/';
 const parliamentConsituencySearch = 'https://data.parliament.uk/membersdataplatform/services/mnis/members/query/constituency=';
-const parliamentTwitterSearch = 'http://lda.data.parliament.uk/members/';
+const parliamentTwitterSearch = 'https://lda.data.parliament.uk/members/';
 
 //Return Variables
 let postCode = ''; //user input
